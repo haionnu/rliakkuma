@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>리락쿠마 Animation</title>
+  <style>
+    :root {
+      --bg: #fffaf0;
+      --card-bg: #fff8e6;
+      --text: #4b2e05;
+      --muted: #6b5a4a;
+      --nav-hover: #f0f0f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Pretendard", -apple-system, "Noto Sans KR", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #ffffffcc;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 15px 0;
+      z-index: 1000;
+      backdrop-filter: blur(5px);
+    }
+    .nav-btn {
+      text-decoration: none;
+      color: #555;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: all 0.2s ease;
+      font-weight: 500;
+    }
+    .nav-btn:hover { background: var(--nav-hover); color:#000; }
+    .active { background:#000; color:#fff !important; }
+    main {
+      max-width: 1200px;
+      margin: 100px auto 80px;
+      padding: 0 24px;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+    .video-container {
+      flex: 1.2;
+      background: var(--card-bg);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 14px;
+    }
+    .info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 30px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #5a4030;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="nav-btn">⭐️</a>
+    <a href="history.html" class="nav-btn">history</a>
+    <a href="profile.html" class="nav-btn">profile</a>
+    <a href="animation.html" class="nav-btn active">animation</a>
+    <a href="goods.html" class="nav-btn">goods</a>
+    <a href="gallery.html" class="nav-btn">gallery</a>
+  </header>
+
+  <main>
+    <div class="video-container">
+      <video controls autoplay muted loop>
+        <source src="Rilakkuma.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="info">
+      <h1>San-X 공식 PV</h1>
+      <p>
+        귀여운 리락쿠마 일러스트와 발랄한 노래로 연출된 공식 영상입니다.
+        멈춰있는 일러스트를 보다가 움직임 효과를 넣어서 살아움직임을 연출해 
+        사람들에게 생동감을 줍니다. 또한 재미와 감동적인 요소를 넣어서 즐겁게 합니다.
+      </p>
+    </div>
+  </main>
+  <main>
+    <div class="video-container">
+      <video controls autoplay muted loop>
+        <source src="RliakkumaandK.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="info">
+      <h1>Rilakkuma and Kaoru</h1>
+      <p>
+        넷플릭스에서 공개된 <strong>리락쿠마와 카오루</strong>는 리락쿠마가 사람과 함께 살아가며
+        일상 속의 따뜻함을 보여주는 스톱모션 애니메이션입니다.  
+        차분한 분위기와 감성적인 연출로 많은 사람들의 마음을 편안하게 만들어 주죠.
+      </p>
+    </div>
+  </main>
+</body>
+</html>
