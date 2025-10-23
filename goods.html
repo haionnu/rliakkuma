@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>리락쿠마 Goods</title>
+  <style>
+    :root {
+      --bg: #fffaf0;
+      --card-bg: #fff8e6;
+      --text: #4b2e05;
+      --muted: #6b5a4a;
+      --nav-hover: #f0f0f0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Pretendard", -apple-system, "Noto Sans KR", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #ffffffcc;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 15px 0;
+      z-index: 1000;
+      backdrop-filter: blur(5px);
+    }
+
+    .nav-btn {
+      text-decoration: none;
+      color: #555;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: all 0.2s ease;
+      font-weight: 500;
+    }
+
+    .nav-btn:hover { background: var(--nav-hover); color:#000; }
+    .active { background:#000; color:#fff !important; }
+
+    main {
+      max-width: 1100px;
+      margin: 120px auto 80px;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      background: var(--card-bg);
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.02);
+    }
+
+    .item img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .info {
+      padding: 20px 30px;
+    }
+
+    .info h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      font-size: 16px;
+      color: #5a4030;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 800px) {
+      .item { flex-direction: column; text-align: center; }
+      .item img { width: 100%; height: auto; }
+      .info { padding: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="main.html" class="nav-btn">⭐️</a>
+    <a href="history.html" class="nav-btn">history</a>
+    <a href="profile.html" class="nav-btn">profile</a>
+    <a href="animation.html" class="nav-btn">animation</a>
+    <a href="goods.html" class="nav-btn active">goods</a>
+    <a href="gallery.html" class="nav-btn">gallery</a>
+  </header>
+
+  <main>
+    <div class="item">
+      <img src="G1.png" alt="리락쿠마 인형">
+      <div class="info">
+        <h2>리락쿠마 봉제인형</h2>
+        <p>리락쿠마의 부드럽고 포근한 촉감을 그대로 느낄 수 있는 대표 굿즈예요. 
+          <br> 
+        따뜻한 색감과 귀여운 표정이 방 안 분위기를 한층 밝게 만들어줘요.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="G2.png" alt="리락쿠마 머그컵">
+      <div class="info">
+        <h2>리락쿠마 머그컵</h2>
+        <p>아침 커피나 티타임을 함께할 귀여운 리락쿠마 컵이에요.
+          <br>
+        부드러운 브라운과 베이지의 리락쿠마와 코리락쿠마로 포근한 느낌을 전해줘요.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="G3.png" alt="리락쿠마 파우치">
+      <div class="info">
+        <h2>리락쿠마 파우치</h2>
+        <p>부드러운 재질과 쿠션감으로 귀여움이 보장된 파우치예요.  
+          <br>
+        귀여운 캐릭터 자수로 포인트를 더했어요.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="G4.png" alt="리락쿠마 키링">
+      <div class="info">
+        <h2>리락쿠마 키링</h2>
+        <p>가방이나 열쇠에 달기 좋은 귀여운 미니 인형 키링이에요.
+          <br>  
+        리락쿠마 친구들이 함께 있어요!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="G5.png" alt="리락쿠마 담요">
+      <div class="info">
+        <h2>리락쿠마 담요</h2>
+        <p>따뜻한 소재로 만들어진 포근한 담요예요.  
+          <br>
+        여행이나 사무실에서도 리락쿠마와 함께 따뜻하게 보낼 수 있어요.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

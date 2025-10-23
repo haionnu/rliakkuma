@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>리락쿠마 Profile</title>
+  <style>
+    :root{
+      --bg: #fffaf0;
+      --card-bg: #fff8e6;
+      --text: #4b2e05;
+      --muted: #6b5a4a;
+      --accent: #f2e3c9;
+      --nav-hover: #f0f0f0;
+    }
+    *{box-sizing:border-box}
+    body{
+        margin:0;
+        font-family: "Pretendard", system-ui, -apple-system, "Noto Sans KR", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+    }
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #ffffffcc;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 15px 0;
+        z-index: 1000;
+        backdrop-filter: blur(5px);
+    }
+    .nav-btn {
+        text-decoration: none;
+        color: #555;
+        padding: 8px 16px;
+        border-radius: 5px;
+        transition: all 0.2s ease;
+        font-weight: 500;
+    }
+    .nav-btn:hover { background: var(--nav-hover); color:#000; }
+    .active { background:#000; color:#fff !important; }
+
+    main{
+        max-width: 1200px;
+        margin: 100px auto 80px;
+        padding: 0 24px;
+    }
+
+    h1{
+        margin: 0 0 28px 0;
+        font-size: 40px;
+        letter-spacing: 1px;
+        color: var(--text);
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+    }
+    .card{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        background: var(--card-bg);
+        padding: 20px;
+        border-radius: 14px;
+       box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+    .thumb{
+        width: 240px;
+        height: 240px;
+        min-width: 240px;
+        border-radius: 12px;
+        overflow: hidden;
+        background: linear-gradient(180deg,#f6efe0,#efe1c7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .thumb img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .info{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .name{
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--text);
+        margin: 0;
+    }
+    .role{
+        font-size: 14px;
+        color: var(--muted);
+        margin: 0;
+    }
+    .desc{
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 1.7;
+        color: #5a4030;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="main.html" class="nav-btn">⭐️</a>
+    <a href="history.html" class="nav-btn">history</a>
+    <a href="profile.html" class="nav-btn active">profile</a>
+    <a href="animation.html" class="nav-btn">animation</a>
+    <a href="goods.html" class="nav-btn">goods</a>
+    <a href="gallery.html" class="nav-btn">gallery</a>
+  </header>
+
+  <main>
+    <h1>Characters</h1>
+
+    <div class="cards">
+      <section class="card">
+        <div class="thumb">
+          <img src="Rilakkuma.png" alt="Rilakkuma">
+        </div>
+        <div class="info">
+          <h2 class="name">Rilakkuma</h2>
+          <p class="role">느긋함을 좋아하는 곰</p>
+          <p class="desc">
+            리락쿠마는 카오루씨 집에 신세를 지고 있는 곰인형입니다.
+            <br>
+            매일 빈둥거리고 있지만 늘 휴식을 즐기며 소박한 것들에서 행복을 느낍니다.
+            <br>
+            리락쿠마의 가장 관심사는 오늘의 밥과 간식입니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="thumb">
+          <img src="Korilakkuma.png" alt="Korilakkuma">
+        </div>
+        <div class="info">
+          <h2 class="name">Korilakkuma</h2>
+          <p class="role">장난꾸러기 작은 곰</p>
+          <p class="desc">
+            코리락쿠마는 어디서 왔는지 모를 작고 호기심 많은 하얀 곰입니다. 
+            <br>
+            가슴에 빨간 버튼이 붙어 있는 것을 보아 진짜 곰은 아닌 걸로 추정됩니다.
+            <br>
+            장난을 매우 좋아하는 응석받이입니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="thumb">
+          <img src="Kiiroitori.png" alt="Kiiroitori">
+        </div>
+        <div class="info">
+          <h2 class="name">Kiiroitori</h2>
+          <p class="role">작고 부지런한 새</p>
+          <p class="desc">
+            키이로이토리는 카오루씨가 키우고 있던 깔끔하고 책임감 있는 성격의 작은 새입니다. 
+            <br>
+            예전에는 새장에 얌전히 있었지만 지금은 마음대로 나와서 매일 빈둥거리는 리락쿠마를 꾸짖거나
+            <br>
+            장닌기 많은 코리락쿠마의 장난에 당하기도 합니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="thumb">
+          <img src="Chairoikoguma.png" alt="Chairoikoguma">
+        </div>
+        <div class="info">
+          <h2 class="name">Chairoikoguma</h2>
+          <p class="role">신비로운 작은 곰</p>
+          <p class="desc">
+            챠이로이코구마는 벌꿀 숲에 사는 자연을 사랑하는 따뜻한 성격을 지닌 곰입니다. 
+            <br>
+            발바닥에는 곰모양 젤리가 있고 몸에서 달콤한 꿀의 향기가 납니다.
+            <br>
+            엉덩이에는 꿀이 묻어 있습니다.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

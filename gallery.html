@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>리락쿠마 Gallery</title>
+  <style>
+    :root {
+      --bg: #fffaf0;
+      --card-bg: #fff8e6;
+      --text: #4b2e05;
+      --muted: #6b5a4a;
+      --nav-hover: #f0f0f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Pretendard", -apple-system, "Noto Sans KR", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #ffffffcc;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 15px 0;
+      z-index: 1000;
+      backdrop-filter: blur(5px);
+    }
+    .nav-btn {
+      text-decoration: none;
+      color: #555;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: all 0.2s ease;
+      font-weight: 500;
+    }
+    .nav-btn:hover { background: var(--nav-hover); color:#000; }
+    .active { background:#000; color:#fff !important; }
+    main {
+      max-width: 1200px;
+      margin: 120px auto 80px;
+      padding: 0 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 40px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="main.html" class="nav-btn">⭐️</a>
+    <a href="history.html" class="nav-btn">history</a>
+    <a href="profile.html" class="nav-btn">profile</a>
+    <a href="animation.html" class="nav-btn">animation</a>
+    <a href="goods.html" class="nav-btn">goods</a>
+    <a href="gallery.html" class="nav-btn active">gallery</a>
+  </header>
+
+  <main>
+    <h1>Rilakkuma Gallery</h1>
+    <p style="color:#6b5a4a; font-size:18px; margin-bottom:30px;">
+        리락쿠마의 다양한 순간들을 함께 감상해보세요 🧸☕
+      </p>
+    <div class="gallery">
+      <img src="R1.JPG" alt="리락쿠마 사진 1">
+      <img src="R2.JPG" alt="리락쿠마 사진 2">
+      <img src="R3.JPG" alt="리락쿠마 사진 3">
+      <img src="R4.JPG" alt="리락쿠마 사진 4">
+      <img src="R5.JPG" alt="리락쿠마 사진 5">
+      <img src="R6.JPG" alt="리락쿠마 사진 6">
+      <img src="R7.JPG" alt="리락쿠마 사진 7">
+      <img src="R8.JPG" alt="리락쿠마 사진 8">
+      <img src="R9.JPG" alt="리락쿠마 사진 9">
+    </div>
+  </main>
+</body>
+</html>
